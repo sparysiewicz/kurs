@@ -1,7 +1,7 @@
 
 
 public class Main {
-    public static void main (String [] args) {
+    public static void main(String[] args) {
         Cat myCat = new Cat();
         Dog myDog = new Dog();
         Bat myBat = new Bat(3.52);
@@ -13,4 +13,4 @@ public class Main {
         System.out.println(batAsString);
 
     }
-    }
+}
