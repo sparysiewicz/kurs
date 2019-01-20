@@ -1,9 +1,9 @@
 public class Dog {
-    private Double dogprice;
+    private Double dogpriceperday;
     private String dogname;
 
-    public Dog(Double dogprice, String dogname) {
-        this.dogprice = dogprice;
+    public Dog(Double dogpriceperday, String dogname) {
+        this.dogpriceperday = dogpriceperday;
         this.dogname = dogname;
     }
 

@@ -1,9 +1,9 @@
 public class Bat {
-    private Double batprice;
+    private Double batpriceperday;
     private String batname;
 
-    public Bat(Double batprice, String batname) {
-        this.batprice = batprice;
+    public Bat(Double batpriceperday, String batname) {
+        this.batpriceperday = batpriceperday;
         this.batname = batname;
     }
 

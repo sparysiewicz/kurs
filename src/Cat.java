@@ -1,9 +1,9 @@
 public class Cat {
-    private Double catprice;
+    private Double catpriceperday;
     private String catname;
 
-    public Cat(Double catprice, String catname) {
-        this.catprice = catprice;
+    public Cat(Double catpriceperday, String catname) {
+        this.catpriceperday = catpriceperday;
         this.catname = catname;
     }
 
