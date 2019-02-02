@@ -1,14 +1,17 @@
-public class Bat {
-    private Double batpriceperday;
-    private String batname;
+import java.util.Scanner;
 
-    public Bat(Double batpriceperday, String batname) {
-        this.batpriceperday = batpriceperday;
-        this.batname = batname;
+public class Bat {
+    private Double pricePerDay;
+    private String name;
+
+    public Bat(Double pricePerDay, String name) {
+        this.pricePerDay = pricePerDay;
+        this.name = name;
     }
 
     public String toString() {
-        return batname + " " + "bat";
+        return name + " " + "bat" + " " + pricePerDay;
+
     }
 
 }
