@@ -1,14 +1,14 @@
-public class Dog {
-    private Double dogpriceperday;
-    private String dogname;
+public class Dog extends Animal {
+    private Double pricePerDay;
+    private String name;
 
-    public Dog(Double dogpriceperday, String dogname) {
-        this.dogpriceperday = dogpriceperday;
-        this.dogname = dogname;
+    public Dog(Double pricePerDay, String name) {
+        this.pricePerDay = pricePerDay;
+        this.name = name;
     }
 
     public String toString() {
-        return dogname + " " + "dog";
+        return name + " " + "dog" + " " + pricePerDay;
     }
 
 }

@@ -1,14 +1,13 @@
-public class Cat {
-    private Double catpriceperday;
-    private String catname;
+public class Cat extends Animal {
+    private Double pricePerDay;
+    private String name;
 
-    public Cat(Double catpriceperday, String catname) {
-        this.catpriceperday = catpriceperday;
-        this.catname = catname;
+    public Cat(Double pricePerDay, String name) {
+        this.pricePerDay = pricePerDay;
+        this.name = name;
     }
-
     public String toString() {
-        return catname + " " + "cat";
+        return name + " " + "cat" + " " + pricePerDay;
     }
 }
 

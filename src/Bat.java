@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Bat {
+public class Bat extends Animal {
     private Double pricePerDay;
     private String name;
 
