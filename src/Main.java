@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         List<Animal> animals = new ArrayList<>();
-        for (int i = 1; i < 4; i += 1) {
+        for (int i = 1; i < 5; i += 1) {
             Scanner s = new Scanner(System.in);
             System.out.println("please enter type of animal");
             String input = s.next();
@@ -21,8 +21,7 @@ public class Main {
                 System.out.println("you enter: " + price);
                 Cat myCat = new Cat(price, name);
                 animals.add(myCat);
-            }
-            if (input.equals("bat")) {
+            } else if (input.equals("bat")) {
                 System.out.println("please write bat's name");
                 String name = s.next();
                 System.out.println("you wrote: " + name);
@@ -31,9 +30,7 @@ public class Main {
                 System.out.println("you enter: " + price);
                 Bat myBat = new Bat(price, name);
                 animals.add(myBat);
-            }
-
-            if (input.equals("dog")) {
+            } else if (input.equals("dog")) {
                 System.out.println("please write dog's name");
                 String name = s.next();
                 System.out.println("you wrote: " + name);
@@ -42,11 +39,13 @@ public class Main {
                 System.out.println("you enter: " + price);
                 Dog myDog = new Dog(price, name);
                 animals.add(myDog);
-            }
+            } else {
+                System.out.println("Sorry, we do not have places for this type of animals");
+
+        }
 
 
         }
         System.out.println(animals);
-
     }
 }
