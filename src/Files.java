@@ -7,7 +7,7 @@ public class Files {
         File f = new File("animals.txt");
         try {
             f.createNewFile();
-            FileWriter writer = new FileWriter(f);
+            FileWriter writer = new FileWriter(f, true);
             writer.append(animalAsString);
             writer.append("\n");
             writer.close();

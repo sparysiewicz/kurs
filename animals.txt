@@ -1,1 +1,5 @@
-Dunaj dog 70.0
+scsc dog 120.0
+scsa dog 70.0
+sdqf cat 120.0
+asdh bat 100.0
+kjh cat 70.0
