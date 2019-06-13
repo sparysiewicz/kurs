@@ -3,3 +3,9 @@ scsa dog 70.0
 sdqf cat 120.0
 asdh bat 100.0
 kjh cat 70.0
+Dunaj dog 80.0
+Lucek cat 90.0
+marian cat 50.0
+misiek cat 120.0
+brutal dog 120.0
+fruwacz bat 180.0

@@ -27,9 +27,11 @@ public class Files {
         try {
             FileReader reader = new FileReader(f);
             BufferedReader buffered = new BufferedReader(reader);
-            String animalData = buffered.readLine();
-            System.out.println(animalData);
-            //animalData == null;
+            String animalData;
+            while ((animalData = buffered.readLine()) != null) {
+                System.out.println(animalData);
+            }
+
         } catch (IOException e) {
             System.out.println("nie znaleziono pliku");
         }
