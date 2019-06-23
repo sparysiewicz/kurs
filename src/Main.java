@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         List<Animal> animals = Files.loadAnimal("animals.txt");
-        for (int i = 1; i < 3; i += 1) {
+        for (int i = 1; i < 1; i += 1) {
             Scanner s = new Scanner(System.in);
             System.out.println("please enter type of animal");
             String input = s.next();

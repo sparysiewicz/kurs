@@ -9,3 +9,6 @@ marian cat 50.0
 misiek cat 120.0
 brutal dog 120.0
 fruwacz bat 180.0
+ghf dog 100.0
+ghf zebra 70.0
+af dog 20.0

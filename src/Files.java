@@ -29,7 +29,21 @@ public class Files {
             BufferedReader buffered = new BufferedReader(reader);
             String animalData;
             while ((animalData = buffered.readLine()) != null) {
-                System.out.println(animalData);
+                String[] animalList = animalData.split(" ");
+                String nameofAnimal = animalList[0];
+                String typeofAnimal = animalList[1];
+                Double priceofAnimal = Double.parseDouble(animalList[2]);
+
+                if (typeofAnimal.equals("cat")) {
+                    animals.add(new Cat(priceofAnimal, nameofAnimal));
+                } else if (typeofAnimal.equals("dog")) {
+                    animals.add(new Dog(priceofAnimal, nameofAnimal));
+                } else if (typeofAnimal.equals("bat")) {
+                    animals.add(new Bat(priceofAnimal, nameofAnimal));
+                } else {
+                    System.err.println("nieznany typ zwierzęcia " + typeofAnimal);
+                }
+
             }
 
         } catch (IOException e) {
