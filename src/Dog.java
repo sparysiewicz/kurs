@@ -11,4 +11,9 @@ public class Dog extends Animal {
         return name + " " + "dog" + " " + pricePerDay;
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
+
 }

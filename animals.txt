@@ -10,5 +10,11 @@ misiek cat 120.0
 brutal dog 120.0
 fruwacz bat 180.0
 ghf dog 100.0
-ghf zebra 70.0
 af dog 20.0
+marian dog 120.0
+gienek bat 80.0
+maniek cat 100.0
+Wyga cat 100.0
+Bob dog 80.0
+Jon cat 100.0
+Klin cat 50.0

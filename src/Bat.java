@@ -14,5 +14,10 @@ public class Bat extends Animal {
 
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
+
 }
 

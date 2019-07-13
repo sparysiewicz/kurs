@@ -1,8 +1,10 @@
 import org.omg.PortableInterceptor.ServerRequestInfo;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.io.*;
+import java.lang.reflect.*;
+import java.util.*;
+import java.util.function.*;
+import java.util.stream.*;
 
 
 public class Main {
@@ -46,10 +48,27 @@ public class Main {
             } else {
                 System.out.println("Sorry, we do not have places for this type of animals");
 
+
+            }
+        }
+        for (int j = 1; j < 2; j += 1) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("please enter name of animal, that you want to remove");
+            String nameofAnimal = sc.next();
+            List<Animal> animalFiltred = animals.stream()
+                    .filter(animal -> animal.getName().equals(nameofAnimal))
+                    .collect(Collectors.toList());
+            animals.removeAll(animalFiltred);
+            {
+
         }
 
 
+            System.out.println(animals);
+
+
         }
-        System.out.println(animals);
+
+
     }
 }
