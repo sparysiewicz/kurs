@@ -1,17 +1,10 @@
 scsc dog 120.0
 scsa dog 70.0
 sdqf cat 120.0
-asdh bat 100.0
 kjh cat 70.0
-Dunaj dog 80.0
-Lucek cat 90.0
-marian cat 50.0
-misiek cat 120.0
-brutal dog 120.0
 fruwacz bat 180.0
 ghf dog 100.0
 af dog 20.0
-marian dog 120.0
 gienek bat 80.0
 maniek cat 100.0
 Wyga cat 100.0

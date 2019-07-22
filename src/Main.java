@@ -51,17 +51,18 @@ public class Main {
 
             }
         }
-        for (int j = 1; j < 2; j += 1) {
+        for (int j = 1; j < 3; j += 1) {
             Scanner sc = new Scanner(System.in);
+            System.out.println("animals");
+            System.out.println(animals);
             System.out.println("please enter name of animal, that you want to remove");
-            String nameofAnimal = sc.next();
-            List<Animal> animalFiltred = animals.stream()
-                    .filter(animal -> animal.getName().equals(nameofAnimal))
+            String nameOfAnimal = sc.next();
+            List<Animal> animalFiltered = animals.stream()
+                    .filter(animal -> animal.getName().equals(nameOfAnimal))
                     .collect(Collectors.toList());
-            animals.removeAll(animalFiltred);
-            {
+            animals.removeAll(animalFiltered);
+            Files.saveListOfAnimal(animals);
 
-        }
 
 
             System.out.println(animals);

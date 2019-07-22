@@ -54,5 +54,34 @@ public class Files {
 
     }
 
+    public static void saveListOfAnimal(List<Animal> animals) {
+
+        StringBuilder sb = new StringBuilder();
+
+
+        animals.stream()
+                .map(animal -> animal.toString())
+                .forEach(animal -> {
+
+                    sb.append(animal);
+                    sb.append("\n");
+
+
+                });
+        String animalAsString = sb.toString();
+        File f = new File("animals.txt");
+        try {
+            f.createNewFile();
+            FileWriter writer = new FileWriter(f, false);
+            writer.append(animalAsString);
+            writer.close();
+
+
+        } catch (IOException e) {
+            System.out.println("plik już istnieje");
+        }
+
+    }
+
 
 }
