@@ -3,6 +3,7 @@ import org.omg.Messaging.*;
 import javax.print.*;
 import java.io.*;
 import java.util.*;
+import java.util.stream.*;
 
 public class Files {
     public static void saveAnimal(Animal animal) {
@@ -57,9 +58,11 @@ public class Files {
     public static void saveListOfAnimal(List<Animal> animals) {
 
         StringBuilder sb = new StringBuilder();
-
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("please enter name of animal, that you want to remove");
+        String nameOfAnimal = sc.next();
         animals.stream()
+                .filter(animal -> !animal.getName().equals(nameOfAnimal))
                 .map(animal -> animal.toString())
                 .forEach(animal -> {
 
@@ -68,6 +71,7 @@ public class Files {
 
 
                 });
+
         String animalAsString = sb.toString();
         File f = new File("animals.txt");
         try {

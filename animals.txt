@@ -1,13 +1,3 @@
-scsc dog 120.0
-scsa dog 70.0
-sdqf cat 120.0
-kjh cat 70.0
-fruwacz bat 180.0
-ghf dog 100.0
-af dog 20.0
-gienek bat 80.0
-maniek cat 100.0
-Wyga cat 100.0
-Bob dog 80.0
-Jon cat 100.0
-Klin cat 50.0
+Mrok dog 100.0
+Pazur cat 70.0
+Hulk bat 130.0

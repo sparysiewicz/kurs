@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         List<Animal> animals = Files.loadAnimal("animals.txt");
-        for (int i = 1; i < 1; i += 1) {
+        for (int i = 1; i < 3; i += 1) {
             Scanner s = new Scanner(System.in);
             System.out.println("please enter type of animal");
             String input = s.next();
@@ -51,20 +51,10 @@ public class Main {
 
             }
         }
-        for (int j = 1; j < 3; j += 1) {
-            Scanner sc = new Scanner(System.in);
+        for (int j = 1; j < 2; j += 1) {
             System.out.println("animals");
             System.out.println(animals);
-            System.out.println("please enter name of animal, that you want to remove");
-            String nameOfAnimal = sc.next();
-            List<Animal> animalFiltered = animals.stream()
-                    .filter(animal -> animal.getName().equals(nameOfAnimal))
-                    .collect(Collectors.toList());
-            animals.removeAll(animalFiltered);
             Files.saveListOfAnimal(animals);
-
-
-
             System.out.println(animals);
 
 
