@@ -55,20 +55,19 @@ public class Files {
 
     }
 
-    public static void saveListOfAnimal(List<Animal> animals) {
+    public static List<Animal> removeAnimalFromFile(List<Animal> animals, String nameOfAnimal) {
 
         StringBuilder sb = new StringBuilder();
-        Scanner sc = new Scanner(System.in);
-        System.out.println("please enter name of animal, that you want to remove");
-        String nameOfAnimal = sc.next();
-        animals.stream()
+
+        List<Animal> updatedList = animals.stream()
                 .filter(animal -> !animal.getName().equals(nameOfAnimal))
-                .map(animal -> animal.toString())
+                .collect(Collectors.toList());
+        updatedList.stream()
+                .map(Object::toString)
                 .forEach(animal -> {
 
                     sb.append(animal);
                     sb.append("\n");
-
 
                 });
 
@@ -84,7 +83,7 @@ public class Files {
         } catch (IOException e) {
             System.out.println("plik już istnieje");
         }
-
+        return updatedList;
     }
 
 

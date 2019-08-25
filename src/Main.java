@@ -54,7 +54,11 @@ public class Main {
         for (int j = 1; j < 2; j += 1) {
             System.out.println("animals");
             System.out.println(animals);
-            Files.saveListOfAnimal(animals);
+            Scanner sc = new Scanner(System.in);
+            System.out.println("please enter name of animal, that you want to remove");
+            String nameOfAnimal = sc.next();
+
+            animals = Files.removeAnimalFromFile(animals, nameOfAnimal);
             System.out.println(animals);
 
 

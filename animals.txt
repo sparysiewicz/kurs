@@ -1,3 +1,4 @@
 Mrok dog 100.0
 Pazur cat 70.0
-Hulk bat 130.0
+sgad dog 120.0
+kajls cat 70.0
